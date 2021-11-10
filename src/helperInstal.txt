@@ -1,0 +1,22 @@
+1.create accuont in oneSignal 
+2.config notifaction in app 
+3.add a script in index.html and insid head tag 
+  <script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async=""></script>
+    <script>
+        window.OneSignal = window.OneSignal || [];
+        OneSignal.push(function() {
+            OneSignal.init({
+                appId: "8699bee1-37be-46cd-99e7-11493c023549",
+            });
+        });
+    </script>
+4.download sdk oneSignal from website oneSignal and copy in public folder 
+5.add useEffect to App.js and insid that paste 
+ useEffect(() => {
+    OneSignal.init({
+      appId: "8699bee1-37be-46cd-99e7-11493c023549"
+    });
+  }, []);
+6.id in script oneSignal coped 
+7.start a notifaction in dashboard 
+8.https://onesignal.com/blog/how-to-integrate-push-notifications-in-react/#part-1-set-up-your-onesignal-account
